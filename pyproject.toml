@@ -1,0 +1,38 @@
+[project]
+name = "algorithm"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "Yoru-no-kumo",email = "youn.studio@outlook.kr"}
+]
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.black]
+line-length = 120
+target-version = ['py312']
+
+[tool.isort]
+profile = "black"
+
+[tool.mypy]
+pretty = true
+show_error_codes = true
+strict = true
+ignore_missing_imports = true
+
+[dependency-groups]
+dev = [
+    "flake8 (>=7.3.0,<8.0.0)",
+    "mypy (>=1.19.1,<2.0.0)",
+    "black (>=26.1.0,<27.0.0)",
+    "autoflake (>=2.3.3,<3.0.0)",
+    "isort (>=8.0.0,<9.0.0)"
+]

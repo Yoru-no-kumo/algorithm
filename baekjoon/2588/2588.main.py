@@ -1,2 +1,1 @@
-a,b = input().split("\n")
-
+a, b = input().split("\n")

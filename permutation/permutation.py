@@ -28,5 +28,6 @@ def main() -> None:
     result = permutation_with_visit_check(arr)
     print("\n".join(result))
 
+
 if __name__ == "__main__":
     main()
